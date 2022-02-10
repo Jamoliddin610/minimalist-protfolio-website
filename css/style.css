@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    width: 1150px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* started head section */
+.head {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.head__btn {
+    display: none;
+}
+
+.head__items {
+    margin-left: 42px;
+}
+
+.head__link {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323d;
+    transition: 0.5s;
+
+}
+
+.head__items:first-child .head__link {
+    color: #5FB4A2;
+}
+
+.head__items:hover .head__link {
+    color: #5FB4A2;
+
+}
+
+@media screen and (max-width:992px) {
+    .head__box.container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .head__btn {
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        border: solid 1px transparent;
+        background-image: url('../imgs/menu-img.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+    }
+
+    .close {
+        background-image: url('../imgs/close.svg');
+    }
+
+    .head__list-box {
+        position: absolute;
+        top: 105px;
+        right: 20px;
+        width: 223px;
+        height: 0;
+        opacity: 0;
+        background: #33323D;
+        overflow: hidden;
+        padding: 40px 0;
+        text-align: center;
+        z-index: -1;
+        transition: 1s;
+    }
+
+    .show {
+        height: 200px;
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .head__list {
+        flex-direction: column;
+    }
+
+    .head__items {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    .head__items:last-child {
+        margin-bottom: 0;
+    }
+
+    .head__items:first-child .head__link {
+        color: #fff;
+    }
+
+    .head__link {
+        color: #fff;
+    }
+}
+
+/* finished head section */
+
+.hero {
+    margin-bottom: 150px;
+}
+
+.hero__box {
+    height: 600px;
+    background-color: transparent;
+    background-image: url('../imgs/hero-img.png');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.hero__inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 450px;
+    height: 358px;
+    background-color: #fff;
+    padding: 55px 55px 0 0;
+}
+
+.hero__text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+    color: #33323D;
+    margin-bottom: 53px;
+}
+
+.hero__btn-box {
+    width: 200px;
+    height: 50px;
+    background: #203A4C;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+
+}
+
+.hero__icon-box {
+    width: 48px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url('../imgs/icon-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 35px;
+    transition: 0.5s;
+}
+
+.hero__btn-box:hover {
+    background: #5FB4A2;
+}
+
+.hero__btn-box:hover .hero__icon-box {
+    background-image: url('../imgs/hover-icon-img.svg');
+}
+
+.hero__btn-box:hover .hero__link {
+    color: #fff;
+}
+
+.hero__link {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.5s;
+
+}
+
+@media screen and (max-width:992px) {
+    .hero {
+        padding: 0 20px;
+    }
+
+    .hero__box.container {
+        width: 100%;
+    }
+
+    .hero__box {
+        background-image: url('../imgs/hero-tablet-img.png');
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+
+    .hero__inner {
+        width: 515px;
+        height: 280px;
+    }
+
+    .hero__text {
+        margin-bottom: 48px;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .head {
+        padding: 40px 0;
+    }
+
+    .hero__box {
+        background-size: 320px 300px;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .hero__inner {
+        width: 100%;
+        padding: 20px 0 0 0;
+    }
+
+    .hero__text {
+        margin-bottom: 32px;
+    }
+}
+
+/* jamoliddin finished head and hero section and started about  */
+.about {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.about__box {
+    height: 600px;
+}
+
+.about__img {
+    width: 540px;
+    height: 600px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.about__inner-box {
+    width: 350px;
+    border-top: solid 1px rgb(51, 50, 61, 0.15);
+    border-bottom: solid 1px rgb(51, 50, 61, 0.15);
+    padding: 50px 0 46px;
+
+}
+
+.about__title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    margin-bottom: 28px;
+}
+
+.about__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(51, 50, 61, 0.8);
+    margin-bottom: 24px;
+}
+
+.about__link-box {
+    display: inline-block;
+    border: 1px solid #33323D;
+    padding: 17px 36px 17px 32px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about__link {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    transition: 0.5s;
+
+}
+
+.about__link-box:hover {
+    background-color: #33323D;
+}
+
+.about__link-box:hover .about__link {
+    color: #fff;
+}
+
+@media screen and (max-width:992px) {
+    .about__box.container {
+        width: 100%;
+    }
+
+    .about__img-box {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .about__img {
+        position: absolute;
+        right: 0;
+    }
+
+    .about__inner {
+        justify-content: flex-end;
+    }
+
+    .about__inner-box {
+        width: 339px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .about__box {
+        height: 100%;
+    }
+
+    .about__inner {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .about__img-box {
+        height: 350px;
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .about__img {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .about__box {
+        height: 100%;
+    }
+
+    .about__img-box {
+        height: 350px;
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .about__img {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about__inner {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .about__inner-box {
+        width: 100%;
+    }
+
+}
+
+/* jamoliddin finished about scetion and started cta section */
+
+.cta {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.cta__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta__text-box {
+    width: 350px;
+}
+
+.cta__text {
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}
+
+.cta__box::after {
+    content: '';
+    height: 1px;
+    background-color: rgb(51, 50, 61, 0.15);
+    flex-grow: 1;
+    margin: 0 32px;
+    order: 2;
+}
+
+.cta__link-box {
+    order: 3;
+}
+
+.cta__link {
+    display: inline-block;
+    border: 1px solid #33323D;
+    padding: 17px 36px 17px 32px;
+    background-color: transparent;
+    transition: 0.5s;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    transition: 0.5s;
+
+}
+
+.cta__link:hover {
+    background-color: #33323D;
+}
+
+.cta__link-box:hover .cta__link {
+    color: #fff;
+}
+
+@media screen and (max-width:992px) {
+    .cta__box.container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .cta__box {
+        flex-direction: column;
+    }
+
+    .cta__text-box {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .about {
+        margin-bottom: 110px;
+
+    }
+
+    .cta {
+        margin-bottom: 80px;
+    }
+}
+
+/* jamoliddin finished cta section and started footer section  */
+
+.foot {
+    width: 100%;
+    padding: 24px 0;
+    background: #33323D;
+}
+
+.foot__item {
+    margin-left: 45px;
+}
+
+.foot__link {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.foot__list-box {
+    flex-grow: 1;
+}
+
+.foot__app-link {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 16px;
+    transition: 0.5s;
+}
+
+.foot__item:hover .foot__link {
+    color: #5FB4A2;
+
+}
+
+.foot__app-item:hover .foot__app-link {
+    color: #5FB4A2;
+
+}
+
+@media screen and (max-width:992px) {
+    .foot__box.container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .foot {
+        padding: 56px 0;
+    }
+
+    .foot__box {
+        flex-direction: column;
+    }
+
+    .foot__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foot__logo-link {
+        margin-bottom: 40px;
+    }
+
+    .foot__item {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    .foot__app-link {
+        margin: 0;
+    }
+
+    .foot__app-list {
+        gap: 16px;
+    }
+}

@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/column.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Minimaapp-list portfolio website</title>
 </head>
+
 <body>
-    
+    <section class="site-hero">
+        <header class="site-head head">
+            <div class="head__box container row between-xs middle-xs">
+                <div class="head__logo-box">
+                    <a href="index.html" class="head__logo-link">
+                        <img src="imgs/logo.svg" alt="logo" class="head__logo">
+                    </a>
+                </div>
+                <div class="head__list-box" id="modal">
+                    <ul class="head__list row middle">
+                        <li class="head__items"><a href="#" class="head__link">HOME</a></li>
+                        <li class="head__items"><a href="#" class="head__link">PORTFOLIO</a></li>
+                        <li class="head__items"><a href="#" class="head__link">CONTACT ME</a></li>
+                    </ul>
+                </div>
+                <button class="head__btn" id="headBtn"></button>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="hero__box container">
+                <div class="hero__inner">
+                    <p class="hero__text">Hey, I’m Alex Spencer and I love building beautiful websites</p>
+                    <div class="hero__btn-box">
+                        <div class="hero__icon-box"></div>
+                        <a href="#" class="hero__link">ABOUT ME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jamoliddin finished hero and head section, and started about  -->
+    <section class="about">
+        <div class=" about__box container row">
+            <div class="about__img-box col-md-6 col-sm-5 col-xs-12">
+                <img src="imgs/personal.jpg" alt="personal" class="about__img">
+            </div>
+            <div class="about__inner col-md-6 col-sm-7 col-xs-12">
+                <div class="about__inner-box">
+                    <h2 class="about__title">
+                        About Me
+                    </h2>
+                    <p class="about__text">
+                        I'm a junior front-end developer looking for a new role in an exciting company. I focus on
+                        writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing
+                        JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I'm based
+                        in London, UK, but I'm happy working remotely and have experience in remote teams. When I'm not
+                        coding, you'll find me outdoors. I love being out in nature whether that's going for a walk, run
+                        or cycling. I'd love you to check out my work.
+                    </p>
+                    <div class="about__link-box">
+                        <a href="#" class="about__link">GO TO PORTFOLIO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* jamoliddin finished about scetion and started cta section */ -->
+    <section class="cta">
+        <div class="cta__box container">
+            <div class="cta__text-box">
+                <p class="cta__text">Interested in doing a project together?</p>
+            </div>
+            <!-- <div class="cta__line"></div> -->
+            <div class="cta__link-box">
+                <a href="#" class="cta__link">CONTACT ME</a>
+            </div>
+        </div>
+    </section>
+<!-- /* jamoliddin finished cta section and started footer section  */ -->
+     <section class="foot">
+         <div class="foot__box container row middle-xs">
+             <a href="index.html" class="foot__logo-link">
+                 <img src="imgs/foot-logo.svg" alt="foot-logo" class="foot__logo">
+             </a>
+         
+         <div class="foot__list-box">
+             <ul class="foot__list row">
+                 <li class="foot__item"><a href="index.html" class="foot__link">HOME</a></li>
+                 <li class="foot__item"><a href="#" class="foot__link">PORTFOLIO</a></li>
+                 <li class="foot__item"><a href="#" class="foot__link">CONTACT ME</a></li>
+             </ul>
+         </div>
+         <div class="foot__app-list-box">
+             <ul class="foot__app-list row">
+                 <li class="foot__app-item"><a href="index.html" class="foot__app-link"><i class='bx bxl-github'></i>
+                 </a></li>
+                 <li class="foot__app-item"><a href="#" class="foot__app-link"><i class="bx bxl-twitter"></i></a></li>
+                 <li class="foot__app-item"><a href="#" class="foot__app-link"><i class="bx bxl-linkedin-square"></i></a></li>
+             </ul>
+         </div>
+    </div>
+     </section>
+    <script src="main.js"></script>
 </body>
+
 </html>
